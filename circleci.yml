@@ -25,5 +25,6 @@ dependencies:
 
 test:
     override:
+        - chmod +x ./gradlew
         - ./gradlew assemble
         - cp -r app/build/outputs $CIRCLE_ARTIFACTS
